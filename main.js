@@ -13,10 +13,6 @@ import { auth0CallbackUrl, auth0ClientId, auth0Domain } from './config'
 
 let redirectUri
 if (Exponent.Constants.manifest.xde) {
-  // Hi there, dear reader!
-  // This value needs to be the tunnel url for your local Exponent project.
-  // It also needs to be listed in valid callback urls of your Auth0 Client
-  // Settings. See the README for more information.
   redirectUri = auth0CallbackUrl
 } else {
   redirectUri = `${Exponent.Constants.linkingUri}/redirect`
