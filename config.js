@@ -1,0 +1,5 @@
+export const pageEditorId = 'page editor id from scaphold'
+export const scapholdUrl = 'scapholdUrl'
+export const auth0ClientId = 'auth0ClientId'
+export const auth0Domain = 'auth0Domain'
+export const auth0CallbackUrl = 'auth0CallbackUrl'
