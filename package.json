@@ -11,5 +11,15 @@
     "jwt-decode": "^2.1.0",
     "react": "~15.4.0",
     "react-native": "https://github.com/exponent/react-native/archive/sdk-14.0.0.tar.gz"
+  },
+  "devDependencies": {
+    "jest-exponent": "^0.2.1",
+    "react-test-renderer": "^15.4.2"
+  },
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "jest": {
+    "preset": "jest-exponent"
   }
 }
