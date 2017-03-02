@@ -1,0 +1,123 @@
+exports[`test renders made true 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#0057e5",
+      "marginBottom": 10,
+      "padding": 5,
+    }
+  }>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}>
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 15,
+          }
+        }>
+        some rich text
+      </Text>
+    </View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail">
+      Lancer les dés: 
+      1D6+0
+    </Text>
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail">
+        Résultat: 
+        6
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail">
+        Détails: 
+        details
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`test renders without crashing 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#ccc",
+      "marginBottom": 10,
+      "padding": 5,
+    }
+  }>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}>
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 15,
+          }
+        }>
+        some rich text
+      </Text>
+    </View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail">
+      Lancer les dés: 
+      1D6+0
+    </Text>
+  </View>
+</View>
+`;

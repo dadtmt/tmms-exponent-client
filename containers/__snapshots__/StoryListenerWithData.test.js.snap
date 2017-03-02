@@ -1,0 +1,17 @@
+exports[`StoryListenerWithData renders correctly 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail">
+    Loading...
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail">
+    Attends ton tour...
+  </Text>
+  <View />
+</View>
+`;

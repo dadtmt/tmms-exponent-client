@@ -11,6 +11,7 @@ import {
 import jwtDecoder from 'jwt-decode'
 
 import { auth0CallbackUrl, auth0ClientId, auth0Domain } from './config'
+import StoryListener from './containers/StoryListenerWithData'
 
 let redirectUri
 if (Exponent.Constants.manifest.xde) {
@@ -96,6 +97,7 @@ class App extends Component {
               : <View>
                   <Text>Welcome {this.state.decodedToken.name}</Text>
                   <Button title='Logout' onPress={this._logout.bind(this)} />
+                  <StoryListener />
                 </View>
           }
         </View>

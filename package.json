@@ -12,12 +12,15 @@
     "exponent": "^14.0.0",
     "graphql": "^0.9.1",
     "jwt-decode": "^2.1.0",
+    "ramda": "^0.23.0",
     "react": "~15.4.0",
     "react-apollo": "^0.13.0",
     "react-native": "https://github.com/exponent/react-native/archive/sdk-14.0.0.tar.gz",
+    "redraft": "^0.7.0",
     "subscriptions-transport-ws": "^0.5.3"
   },
   "devDependencies": {
+    "babel-preset-latest": "^6.22.0",
     "jest-exponent": "^0.2.1",
     "react-test-renderer": "^15.4.2"
   },

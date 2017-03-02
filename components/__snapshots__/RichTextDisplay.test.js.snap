@@ -1,0 +1,236 @@
+exports[`test renders bulletlist 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 15,
+      }
+    }>
+    this is a list:
+  </Text>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail">
+      •
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "flex": 1,
+          "paddingLeft": 5,
+        }
+      }>
+      first item
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail">
+      •
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "flex": 1,
+          "paddingLeft": 5,
+        }
+      }>
+      second item
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`test renders content 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 15,
+      }
+    }>
+    some rich text
+  </Text>
+</View>
+`;
+
+exports[`test renders rich text content 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 40,
+      }
+    }>
+    titre H1
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 25,
+      }
+    }>
+    titre H2
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 15,
+      }
+    }>
+    unstyled paragraph
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 15,
+      }
+    } />
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 15,
+      }
+    }>
+    this is 
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontStyle": "italic",
+        }
+      }>
+      italic style 
+    </Text>
+    and this is bold style and this is underline style and this is 
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontStyle": "italic",
+        }
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "textDecorationLine": "underline",
+            }
+          }>
+          all styles
+        </Text>
+      </Text>
+    </Text>
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 15,
+      }
+    } />
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 40,
+      }
+    }>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontStyle": "italic",
+        }
+      }>
+      h1
+    </Text>
+     
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontWeight": "bold",
+        }
+      }>
+      with
+    </Text>
+     
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "textDecorationLine": "underline",
+        }
+      }>
+      styles
+    </Text>
+  </Text>
+</View>
+`;

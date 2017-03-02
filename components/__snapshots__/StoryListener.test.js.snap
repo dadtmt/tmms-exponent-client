@@ -1,0 +1,54 @@
+exports[`StoryListener renders current page 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail">
+    Attends ton tour...
+  </Text>
+  <View>
+    <View>
+      <View
+        style={
+          Object {
+            "marginBottom": 20,
+          }
+        }>
+        <View>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontSize": 15,
+              }
+            }>
+            some rich text
+          </Text>
+        </View>
+      </View>
+      <View />
+      <View />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`StoryListener renders loading 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail">
+    Loading...
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail">
+    Attends ton tour...
+  </Text>
+  <View />
+</View>
+`;
