@@ -7,10 +7,15 @@
   "main": "main.js",
   "dependencies": {
     "@exponent/vector-icons": "~4.0.0",
+    "apollo-client": "^0.9.0",
+    "events": "^1.1.1",
     "exponent": "^14.0.0",
+    "graphql": "^0.9.1",
     "jwt-decode": "^2.1.0",
     "react": "~15.4.0",
-    "react-native": "https://github.com/exponent/react-native/archive/sdk-14.0.0.tar.gz"
+    "react-apollo": "^0.13.0",
+    "react-native": "https://github.com/exponent/react-native/archive/sdk-14.0.0.tar.gz",
+    "subscriptions-transport-ws": "^0.5.3"
   },
   "devDependencies": {
     "jest-exponent": "^0.2.1",

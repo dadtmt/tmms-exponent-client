@@ -1,5 +1,5 @@
 import Exponent from 'exponent'
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import {
   Button,
   Linking,
@@ -21,8 +21,17 @@ if (Exponent.Constants.manifest.xde) {
 
 class App extends Component {
 
-  state = {
-    idToken: ''
+  constructor(props) {
+    super(props)
+    this.state = {
+      idToken: null,
+      decodedToken: {}
+    }
+    const { auth } = props
+    auth.on('retrieveToken', idToken => this.setState({
+      decodedToken: jwtDecoder(idToken),
+      idToken
+    }))
   }
 
   componentDidMount() {
@@ -42,7 +51,9 @@ class App extends Component {
     }, {})
     const encodedToken = responseObj.id_token
     const decodedToken = jwtDecoder(encodedToken)
-
+    const { auth, logUser } = this.props
+    logUser(encodedToken)
+    auth.setToken(encodedToken)
     this.setState({
       idToken: encodedToken,
       decodedToken
@@ -67,13 +78,25 @@ class App extends Component {
     Exponent.WebBrowser.openBrowserAsync(redirectionURL)
   }
 
+  _logout() {
+    this.setState({
+      idToken: null,
+      decodedToken: {}
+    })
+    const { auth } = this.props
+    auth.logout()
+  }
+
   render() {
     return (
         <View style={styles.container}>
           {
-            this.state.idToken === ''
+            this.state.idToken === null
               ? <Button title='Login with Auth0' onPress={this._loginWithAuth0} />
-            : <Text>Welcome {this.state.decodedToken.name}</Text>
+              : <View>
+                  <Text>Welcome {this.state.decodedToken.name}</Text>
+                  <Button title='Logout' onPress={this._logout.bind(this)} />
+                </View>
           }
         </View>
     )
@@ -88,5 +111,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 })
+
+App.propTypes = {
+  auth: PropTypes.object.isRequired,
+  logUser: PropTypes.func.isRequired
+}
 
 export default App

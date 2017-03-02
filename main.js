@@ -1,5 +1,5 @@
 import Exponent from 'exponent'
 
-import App from './App'
+import AppWithProvider from './AppWithProvider'
 
-Exponent.registerRootComponent(App)
+Exponent.registerRootComponent(AppWithProvider)
